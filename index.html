@@ -14,7 +14,7 @@
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>
 const SUPABASE_URL='https://jdphpvyyoedffevvmxgv.supabase.co';
-const SUPABASE_PUBLISHABLE_KEY='PASTE_YOUR_PUBLISHABLE_KEY_HERE';
+const SUPABASE_PUBLISHABLE_KEY='sb_publishable_V13CKTAiu5WTTn7qG1llIg_X18zzNve';
 const db=window.supabase.createClient(SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY);
 const KEY='watchhub-library-local-v1';let videos=[],filter='all';const $=id=>document.getElementById(id);
 function idFromUrl(value){const iframe=value.match(/(?:src=["']|youtube\.com\/embed\/)([A-Za-z0-9_-]{6,})/i);if(iframe)return iframe[1];try{const u=new URL(value.trim());if(u.hostname.includes('youtu.be'))return u.pathname.slice(1).split('?')[0];return u.searchParams.get('v')||u.pathname.split('/').pop()}catch{return null}}
